@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simpleDemo;
+package com.fxb.patterns.iterator;
 
 public class BookShelfIterator<T> implements Iterator<T> {
     private BookShelf<T> bookShelf;

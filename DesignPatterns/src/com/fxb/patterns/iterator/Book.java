@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simpleDemo;
+package com.fxb.patterns.iterator;
 
 /**
  * 实体类  被存储在集合或数组里的基本单元
