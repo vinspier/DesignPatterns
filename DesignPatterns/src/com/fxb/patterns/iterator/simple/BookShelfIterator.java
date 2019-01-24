@@ -1,5 +1,8 @@
-package com.fxb.patterns.iterator;
-
+package com.fxb.patterns.iterator.simple;
+/**
+ * 具体的迭代器 不同的迭代器有不同的功能
+ * 具体实现不同
+ * */
 public class BookShelfIterator<T> implements Iterator<T> {
     private BookShelf<T> bookShelf;
     private int index;

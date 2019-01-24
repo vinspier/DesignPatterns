@@ -1,5 +1,9 @@
 package com.fxb.patterns.iterator;
 
+import com.fxb.patterns.iterator.simple.Book;
+import com.fxb.patterns.iterator.simple.BookShelf;
+import com.fxb.patterns.iterator.simple.Iterator;
+
 public class TestIterator {
     public static void main(String[] args) {
         BookShelf<Book> shelf = new BookShelf<Book>();

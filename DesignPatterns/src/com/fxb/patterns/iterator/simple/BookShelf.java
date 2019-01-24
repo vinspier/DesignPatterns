@@ -1,5 +1,9 @@
-package com.fxb.patterns.iterator;
+package com.fxb.patterns.iterator.simple;
 
+/**
+ * 存储数据单元的集合
+ * 迭代器在此类生成
+ * */
 public class BookShelf<T> implements Shelf<T> {
 
     private Object[] books;
