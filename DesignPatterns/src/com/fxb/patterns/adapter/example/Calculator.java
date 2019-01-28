@@ -1,4 +1,4 @@
-package com.fxb.patterns.adapter.simple;
+package com.fxb.patterns.adapter.example;
 
 /**
  * 功能已经测试过的现有的组件类

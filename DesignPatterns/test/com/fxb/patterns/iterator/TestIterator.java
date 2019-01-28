@@ -1,8 +1,8 @@
 package com.fxb.patterns.iterator;
 
-import com.fxb.patterns.iterator.simple.Book;
-import com.fxb.patterns.iterator.simple.BookShelf;
-import com.fxb.patterns.iterator.simple.Iterator;
+import com.fxb.patterns.iterator.example.Book;
+import com.fxb.patterns.iterator.example.BookShelf;
+import com.fxb.patterns.iterator.example.Iterator;
 
 public class TestIterator {
     public static void main(String[] args) {

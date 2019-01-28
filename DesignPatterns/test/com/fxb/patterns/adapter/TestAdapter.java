@@ -1,8 +1,8 @@
 package com.fxb.patterns.adapter;
 
-import com.fxb.patterns.adapter.simple.Calculator;
-import com.fxb.patterns.adapter.simple.PrintConsign;
-import com.fxb.patterns.adapter.simple.PrintExtend;
+import com.fxb.patterns.adapter.example.Calculator;
+import com.fxb.patterns.adapter.example.PrintConsign;
+import com.fxb.patterns.adapter.example.PrintExtend;
 
 public class TestAdapter {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simple;
+package com.fxb.patterns.iterator.example;
 
 /**
  * 定义书架的共有功能

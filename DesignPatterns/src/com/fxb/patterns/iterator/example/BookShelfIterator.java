@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simple;
+package com.fxb.patterns.iterator.example;
 /**
  * 具体的迭代器 不同的迭代器有不同的功能
  * 具体实现不同

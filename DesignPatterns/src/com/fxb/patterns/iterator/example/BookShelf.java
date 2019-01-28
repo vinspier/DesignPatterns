@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simple;
+package com.fxb.patterns.iterator.example;
 
 /**
  * 存储数据单元的集合

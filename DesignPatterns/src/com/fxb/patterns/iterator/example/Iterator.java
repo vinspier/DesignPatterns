@@ -1,4 +1,4 @@
-package com.fxb.patterns.iterator.simple;
+package com.fxb.patterns.iterator.example;
 
 /**
  * 抽象迭代器接口 定义方法

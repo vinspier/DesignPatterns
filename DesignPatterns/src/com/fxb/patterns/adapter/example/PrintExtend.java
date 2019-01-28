@@ -1,4 +1,4 @@
-package com.fxb.patterns.adapter.simple;
+package com.fxb.patterns.adapter.example;
 
 
 /**
