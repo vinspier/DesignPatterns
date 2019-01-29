@@ -57,6 +57,11 @@ public class BookShelf<T> implements Shelf<T> {
             throw new IndexOutOfBoundsException("Index" + index + "Size" + count);
     }
 
+    /**
+     * 此处采用了工厂模式
+     * 在父接口 iterable 中定义 生成实例的方式
+     * 在此类中 王城具体的产生实例的实现
+     * */
     @Override
     public Iterator<T> iterator() {
         return new BookShelfIterator<T>(this);
