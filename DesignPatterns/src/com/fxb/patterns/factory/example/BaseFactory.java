@@ -10,7 +10,7 @@ import java.util.List;
  * */
 public abstract class BaseFactory implements Factory {
 
-    protected List<BaseProduct> products = new ArrayList<>();
+    protected List<BaseProduct> products = new ArrayList<BaseProduct>();
 
     /** 产生最终产品的流程框架 （产品实例不一定只有new操作） */
     @Override
