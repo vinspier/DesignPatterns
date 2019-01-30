@@ -13,6 +13,9 @@ public abstract class BaseFactory implements Factory {
     protected List<BaseProduct> products = new ArrayList<BaseProduct>();
 
     /** 产生最终产品的流程框架 （产品实例不一定只有new操作） */
+    /**    对象的创建进行了包装，任务交给工厂来完成，代替了原来的有使用者手动new创建。
+     工厂创建目标对象是一个过程，并非只是一个操作，因为在创建目标对象的前可能还需要创建辅助功能对象或者其他的一些操作
+     （初始化设置），这时候就需要嵌入模板方法模式*/
     @Override
     public BaseProduct create() {
         BaseProduct bp = createProduct();
