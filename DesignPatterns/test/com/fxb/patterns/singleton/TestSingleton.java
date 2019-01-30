@@ -5,14 +5,14 @@ import com.fxb.patterns.singleton.example.*;
 public class TestSingleton {
     public static void main(String[] args) {
 
-        for(int i = 0; i < 10000; i++){
+        for(int i = 0; i < 100; i++){
             Thread t = new Thread(new Runnable() {
 
-                SingletonF a = SingletonF.createInstance();
+                SingletonUnsafe a = SingletonUnsafe.createInstance();
 
                 @Override
                 public void run() {
-                    SingletonF aa = SingletonF.createInstance();
+                    SingletonUnsafe aa = SingletonUnsafe.createInstance();
                     if(! (a == aa)){
                         System.out.println(a == aa);
                     }
