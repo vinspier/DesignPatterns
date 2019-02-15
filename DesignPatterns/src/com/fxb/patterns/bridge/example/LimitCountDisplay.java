@@ -1,5 +1,8 @@
 package com.fxb.patterns.bridge.example;
 
+/**
+ * "类的功能层次结构" 的次级新增功能类
+ * */
 public class LimitCountDisplay extends Display {
 
     public LimitCountDisplay(DisplayImpl impl) {
