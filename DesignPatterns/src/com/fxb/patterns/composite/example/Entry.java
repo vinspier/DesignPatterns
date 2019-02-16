@@ -6,6 +6,7 @@ package com.fxb.patterns.composite.example;
 public abstract class Entry {
     public abstract String getName();
     public abstract int getSize();
+    protected Entry parent;
     /** add方法只有容器可以使用 所以有好几种方式可以实现 */
     //方式1 在顶层抽象类中 定义 抛出异常 让容器子类去继承并重写该方法
     public  Entry add(Entry entry) throws FileTreatmentException{
@@ -30,8 +31,19 @@ public abstract class Entry {
     }
     public abstract void printList(String prefix);
 
+    public String getFullName(){
+        StringBuilder fileName = new StringBuilder();
+        Entry entry = this;
+        do {
+            fileName.insert(0,"/" + entry.getName());
+            entry = entry.parent;
+        }while (entry != null);
+        return fileName.toString();
+    }
+
     @Override
     public String toString() {
         return getName() + "(" + getSize() + ")";
     }
+
 }

@@ -35,6 +35,7 @@ public class Directory extends Entry {
     @Override
     public Entry add(Entry entry) {
         diretories.add(entry);
+        entry.parent = this;// 保存父级关系
         return this;
     }
 

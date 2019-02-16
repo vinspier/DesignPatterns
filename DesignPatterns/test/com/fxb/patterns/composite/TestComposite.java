@@ -32,5 +32,7 @@ public class TestComposite {
         hanako.add(new File("direction.doc",504));
         tomura.add(new File("sfdg.mail",567));
         rootDir.printList();
+        System.out.println("- - - - - - - - - - - - - - - - - - - - ");
+        System.out.println(tomura.getFullName());
     }
 }
