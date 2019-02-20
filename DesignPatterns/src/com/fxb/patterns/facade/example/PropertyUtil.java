@@ -16,7 +16,7 @@ public class PropertyUtil {
 
     /** 获取指定文件名的常量 */
     public static Properties getProperties(String filename){
-        String file = filename + ".txt";
+        String file = filename;
         Properties properties = new Properties();
         try {
             properties.load(new FileInputStream(file));

@@ -11,11 +11,13 @@ import java.util.Properties;
  * */
 public class PageMaker {
 
+    public static final String MAIL_FILENAME = "E:\\GitHub\\DesignPatterns\\DesignPatterns\\src\\com\\fxb\\patterns\\facade\\example\\mailConfig.txt";
+
     private PageMaker() {
     }
 
     public static void makePage(String mail,String filename) throws Exception {
-        Properties mailProps = PropertyUtil.getProperties("com/fxb/patterns/Facade/example/mailConfig");
+        Properties mailProps = PropertyUtil.getProperties(MAIL_FILENAME);
         String username = mailProps.getProperty(mail);
         HtmlWriter writer = new HtmlWriter(new FileWriter(filename));
         writer.makeTitle("欢迎来到 " + username + " 的主页");
@@ -28,7 +30,7 @@ public class PageMaker {
         HtmlWriter writer = new HtmlWriter(new FileWriter(filename));
         writer.makeTitle("邮件列表的主页");
         writer.makeParagraph("邮件列表的主页");
-        Properties mailProps = PropertyUtil.getProperties("mailConfig");
+        Properties mailProps = PropertyUtil.getProperties(MAIL_FILENAME);
         Enumeration enumeration = mailProps.propertyNames();
         while (enumeration.hasMoreElements()){
             String mail = (String) enumeration.nextElement();
