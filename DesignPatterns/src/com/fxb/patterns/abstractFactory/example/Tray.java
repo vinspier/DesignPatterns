@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 抽象零件类Tray类
  * */
 public abstract class Tray extends Item {
-    protected ArrayList<Item> items = new ArrayList<>();
+    protected ArrayList<Item> items = new ArrayList<Item>();
 
     public Tray() {
     }

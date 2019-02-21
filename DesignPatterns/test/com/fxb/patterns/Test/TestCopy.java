@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TestCopy implements Cloneable{
     private String nane;
-    private ArrayList<String> list = new ArrayList<>();
+    private ArrayList<String> list = new ArrayList<String>();
 
     public static void main(String[] args) {
         TestCopy t = new TestCopy();

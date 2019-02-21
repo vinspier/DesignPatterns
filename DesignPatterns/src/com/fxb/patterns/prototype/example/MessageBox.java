@@ -16,7 +16,7 @@ public class MessageBox implements Product  {
      * */
     private String charType;
     private int[] array = {0,1,2,3,4,5,6,7,8,9};
-    private ArrayList<String> list = new ArrayList<>();
+    private ArrayList<String> list = new ArrayList<String>();
 
     public MessageBox(String charType) {
         this.charType = charType;

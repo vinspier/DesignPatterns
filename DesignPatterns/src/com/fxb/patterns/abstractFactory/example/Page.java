@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public abstract class Page {
     protected String title;
     protected String author;
-    protected ArrayList<Item> items = new ArrayList<>();
+    protected ArrayList<Item> items = new ArrayList<Item>();
 
     public Page() {
     }

@@ -9,7 +9,7 @@ import java.util.Iterator;
 public class Directory extends Entry {
 
     private String name;
-    private ArrayList<Entry> diretories = new ArrayList<>();
+    private ArrayList<Entry> diretories = new ArrayList<Entry>();
 
     public Directory(String name) {
         this.name = name;

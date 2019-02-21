@@ -10,7 +10,7 @@ import java.util.Map;
  * 调用者可以通过该类复制出已保持的任何一个实例的副本
  * */
 public class Manager {
-    private Map<String,Product> dataMap = new HashMap<>();
+    private Map<String,Product> dataMap = new HashMap<String,Product>();
 
     /** 注册原型实例 */
     public void register(String name,Product obj){

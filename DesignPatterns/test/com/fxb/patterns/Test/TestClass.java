@@ -1,6 +1,7 @@
 package com.fxb.patterns.Test;
 
 public class TestClass implements Cloneable{
+    public int test;
     private int age;
     private String name;
 
