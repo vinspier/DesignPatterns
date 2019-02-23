@@ -15,7 +15,7 @@ public class SingletonUnsafe {
     }
 
 /**
-    public static SingletonUnsafe createInstance(){
+    public staticProxy SingletonUnsafe createInstance(){
         if(instance == null){
            synchronized (SingletonUnsafe.class){
                instance = new SingletonUnsafe();
