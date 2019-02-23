@@ -20,11 +20,11 @@ public class HtmlWriter {
         writer.write("<title>" + title + "</title>");
         writer.write("</head>");
         writer.write("<body>\n");
-        writer.write("<h1>" + title + "</h1>");
+        writer.write("<h1>" + title + "</h1>\n");
     }
 
     public void makeParagraph(String msg) throws Exception {
-        writer.write("<p>" + msg + "</p>");
+        writer.write("<p>" + msg + "</p>\n");
     }
 
     public void makeLink(String href,String caption) throws Exception {

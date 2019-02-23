@@ -11,7 +11,7 @@ import java.util.Properties;
  * */
 public class PageMaker {
 
-    public static final String MAIL_FILENAME = "E:\\GitHub\\DesignPatterns\\DesignPatterns\\src\\com\\fxb\\patterns\\facade\\example\\mailConfig.txt";
+    public static final String MAIL_FILENAME = "E:\\DesignPatterns\\DesignPatterns\\src\\com\\fxb\\patterns\\facade\\example\\mailConfig.txt";
 
     private PageMaker() {
     }
