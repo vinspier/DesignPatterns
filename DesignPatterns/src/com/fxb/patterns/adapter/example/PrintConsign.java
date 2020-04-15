@@ -23,6 +23,7 @@ public class PrintConsign implements Print{
     @Override
     public void printCalculate(int number) {
         System.out.println(calculator.calculate(number));
+        // 特定需要的方法
         for(int i = number; i > 0 ; i--){
             System.out.print(i + " ");
         }
