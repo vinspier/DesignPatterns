@@ -10,8 +10,8 @@ public class RandomNumberGenerator extends NumberGenerator {
     public void change() {
         for (int i = 0; i < 5; i++){
             no = random.nextInt(100);
+            /** 数据发生改变时 通知观察者 */
             notifyObservers();
-            System.out.println();
         }
     }
 }
