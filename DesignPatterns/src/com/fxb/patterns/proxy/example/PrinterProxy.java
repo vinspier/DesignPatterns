@@ -52,7 +52,7 @@ public class PrinterProxy implements Printable {
 
     // 增强 被代理类的方法
     private void after(){
-        System.out.println("before 增强方法");
+        System.out.println("after 增强方法");
     }
 
 }

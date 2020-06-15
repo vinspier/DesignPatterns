@@ -9,6 +9,7 @@ package com.fxb.patterns.proxy.staticProxy;
 public class ProxiedClass implements ThemeInterface {
     @Override
     public String dealWith(String message) {
+        System.out.println("实际目标对象的方法执行 ：" + message);
         return message.toUpperCase();
     }
 }
