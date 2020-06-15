@@ -4,8 +4,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * 被观察者抽象类
+ * 抽象出被观察者的共性属性以及行为
+ *
+ * */
 public abstract class NumberGenerator implements Generator {
 
+    /**
+     * 观察者对象的存储空间
+     * 实际中可存储于数据库中（非/关系型）
+     *  */
     private List<Observer> observers = new ArrayList<Observer>();
 
     protected int no;
@@ -23,7 +32,7 @@ public abstract class NumberGenerator implements Generator {
     /**
      * 主动通知观察者
      * */
-    protected void notifyObservers() {
+    public void notifyObservers() {
         Iterator<Observer> it = observers.iterator();
         while (it.hasNext()){
             it.next().update(this);
@@ -36,7 +45,7 @@ public abstract class NumberGenerator implements Generator {
     }
 
     /**
-     * 别观察者对象的状态改变
+     * 被观察者对象的事件改变
      * 具体实现子类完成
      * */
     public abstract void change();
