@@ -6,9 +6,9 @@ package com.fxb.patterns.builder.example;
  * */
 public interface Builder {
 
-    CarBody createBody();
-    CarWheel createWheel();
-    CarEngine createEngine();
-    CarSecuritySystem createSecuritySystem();
+    Builder createBody();
+    Builder createWheel();
+    Builder createEngine();
+    Builder createSecuritySystem();
     AbstractCar getCar();
 }

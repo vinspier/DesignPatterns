@@ -36,4 +36,14 @@ public class SingletonC {
         return instance;
     }
 
+    /**
+     * 直接对方法进行同步
+     * */
+    public synchronized static SingletonC createInstance1(){
+        if (instance == null){
+            instance = new SingletonC();
+        }
+        return instance;
+    }
+
 }

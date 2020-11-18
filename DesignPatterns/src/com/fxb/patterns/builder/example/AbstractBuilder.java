@@ -7,17 +7,5 @@ package com.fxb.patterns.builder.example;
 public abstract class AbstractBuilder implements Builder{
 
     @Override
-    public abstract CarBody createBody();
-
-    @Override
-    public abstract CarWheel createWheel();
-
-    @Override
-    public abstract CarEngine createEngine();
-
-    @Override
-    public abstract CarSecuritySystem createSecuritySystem();
-
-    @Override
     public abstract AbstractCar getCar();
 }

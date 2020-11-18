@@ -6,12 +6,12 @@ package com.fxb.patterns.builder.example;
  * 达到可以根据不同的建造者创造出所对应的实例 实现可替换性
  * */
 public class Director {
+
     private Builder builder;
 
-    public Director() {
-        this.builder = builder;
-    }
-
+    /**
+     * 必须指定一个具体的建造者
+     */
     public Director(Builder builder) {
         this.builder = builder;
     }
@@ -21,10 +21,10 @@ public class Director {
      *  类似于模板方法的抽象类定义的模板
      * */
     public AbstractCar constructCar(){
-        builder.createBody();
-        builder.createWheel();
-        builder.createEngine();
-        builder.createSecuritySystem();
+        builder.createBody()
+                .createWheel()
+                .createEngine()
+                .createSecuritySystem();
         return builder.getCar();
     }
 }

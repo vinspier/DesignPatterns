@@ -10,31 +10,31 @@ public class CommonBuilder extends AbstractBuilder {
     private CarCommon car = new CarCommon("建造普通汽车");
 
     @Override
-    public CarBody createBody() {
+    public Builder createBody() {
         CarBody body = new CarBody("普通汽车车身");
         this.car.setBody(body);
-        return body;
+        return this;
     }
 
     @Override
-    public CarWheel createWheel() {
+    public Builder createWheel() {
         CarWheel wheel = new CarWheel("普通车汽车轮胎");
         this.car.setWheel(wheel);
-        return wheel;
+        return this;
     }
 
     @Override
-    public CarEngine createEngine() {
+    public Builder createEngine() {
         CarEngine engine = new CarEngine("普通汽车发动机");
         this.car.setEngine(engine);
-        return engine;
+        return this;
     }
 
     @Override
-    public CarSecuritySystem createSecuritySystem() {
+    public Builder createSecuritySystem() {
         CarSecuritySystem securitySystem = new CarSecuritySystem("普通汽车安全系统");
         this.car.setSecuritySystem(securitySystem);
-        return securitySystem;
+        return this;
     }
 
     /** 此类特殊的方法 在具体子类中实现 只属于此类 */
@@ -43,6 +43,7 @@ public class CommonBuilder extends AbstractBuilder {
         this.car.setComponentsA(componentsA);
     }
 
+    @Override
     public AbstractCar getCar() {
         combineSpecialComponentsA();
         return this.car;

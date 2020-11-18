@@ -1,4 +1,4 @@
-package com.fxb.patterns.Builder;
+package com.fxb.patterns.builder;
 
 import com.fxb.patterns.builder.example.*;
 
