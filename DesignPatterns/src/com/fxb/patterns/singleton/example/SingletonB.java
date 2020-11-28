@@ -12,6 +12,9 @@ public class SingletonB {
 
     /** 构造器私有化 禁止除了以下的入口外其他方法产生实例 */
     private SingletonB() {
+        if(instance != null){
+            throw new RuntimeException("单例已存在,不允许反射方式创建实例");
+        }
     }
 
     /** 静态代码块 当类被初始加载的时候 初始化该实例 */
