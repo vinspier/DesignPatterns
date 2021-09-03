@@ -1,5 +1,7 @@
 package com.fxb.patterns.observer.example2;
 
+import java.util.List;
+
 /**
  * 被观察者接口
  * 定义被观察者的统一API
@@ -8,11 +10,24 @@ package com.fxb.patterns.observer.example2;
  * */
 public interface Watched {
 
-    public void addWatcher(Watcher watcher);
+    /**
+     * 单个注册 观察者
+     */
+    void registerWatcher(Watcher watcher);
 
-    public void removeWatcher(Watcher watcher);
+    /**
+     * 批量注册 观察者
+     */
+    void registerWatchers(List<Watcher> watchers);
 
-    public void notifyWatchers();
+    /**
+     * 注销 观察者
+     */
+    void removeWatcher(Watcher watcher);
 
-    void start();
+    /**
+     * 通知 观察者
+     */
+    void notifyWatchers();
+
 }

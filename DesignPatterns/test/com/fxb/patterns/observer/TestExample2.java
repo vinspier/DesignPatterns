@@ -6,13 +6,16 @@ import com.fxb.patterns.observer.example2.Thief;
 import com.fxb.patterns.observer.example2.Transport;
 
 public class TestExample2 {
+
     public static void main(String[] args) {
 
         Transport transport = new Transport();
-        transport.addWatcher(new Police());
-        transport.addWatcher(new Security());
-        transport.addWatcher(new Thief());
+
+        transport.registerWatcher(new Police());
+        transport.registerWatcher(new Security());
+        transport.registerWatcher(new Thief());
 
         transport.start();
     }
+
 }
