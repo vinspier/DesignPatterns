@@ -7,10 +7,10 @@ public class TestChainResponsibility {
         /**
          * 定义责任处理者
          * */
-        Support noSupport = new NoSupport("NoSupport");
-        Support limitSupport = new LimitSupport("limitSupport",100);
-        Support oddSupport = new OddSupport("oddSupport");
-        Support specialSupport = new SpecialSupport("specialSupport",330);
+        AbstractSupport noSupport = new NoSupport("NoSupport");
+        AbstractSupport limitSupport = new LimitSupport("limitSupport",100);
+        AbstractSupport oddSupport = new OddSupport("oddSupport");
+        AbstractSupport specialSupport = new SpecialSupport("specialSupport",330);
 
         /**
          * 设置责任链 可以随需求的变化而调整
@@ -22,7 +22,7 @@ public class TestChainResponsibility {
          * */
         for (int i = 0; i < 500; i += 33){
             Trouble trouble = new Trouble(i);
-            noSupport.support(trouble);
+            noSupport.resolve(trouble);
         }
 
     }

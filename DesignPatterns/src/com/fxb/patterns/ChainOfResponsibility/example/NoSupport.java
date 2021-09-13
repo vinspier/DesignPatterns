@@ -5,14 +5,14 @@ package com.fxb.patterns.ChainOfResponsibility.example;
  * 具体处理者 1
  * 不做任何处理
  * */
-public class NoSupport extends Support {
+public class NoSupport extends AbstractSupport {
 
     public NoSupport(String name) {
         super(name);
     }
 
     @Override
-    protected boolean resolve(Trouble t) {
+    public boolean support(Trouble t) {
         return false;
     }
 

@@ -5,7 +5,7 @@ package com.fxb.patterns.ChainOfResponsibility.example;
  * 具体处理者 2
  * 只处理问题编号小于限制limit的问题
  * */
-public class LimitSupport extends Support {
+public class LimitSupport extends AbstractSupport {
 
     private int limit;
 
@@ -15,7 +15,7 @@ public class LimitSupport extends Support {
     }
 
     @Override
-    protected boolean resolve(Trouble t) {
+    public boolean support(Trouble t) {
         if(t.getNo() < limit)
             return true;
         else
