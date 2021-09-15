@@ -4,7 +4,7 @@ package com.fxb.patterns.bridge.example;
  *
  * "类的实现层次结构" 中的具体实现类
  * */
-public class StringDisplayImpl extends DisplayImpl {
+public class StringDisplayImpl implements DisplayImpl {
     private String target;
     private int width;
 

@@ -4,7 +4,7 @@ package com.fxb.patterns.bridge.example;
  *
  * "类的实现层次结构" 中的具体实现类
  * */
-public class NumberDisplayImpl extends DisplayImpl {
+public class NumberDisplayImpl implements DisplayImpl {
 
     private int number;
 
