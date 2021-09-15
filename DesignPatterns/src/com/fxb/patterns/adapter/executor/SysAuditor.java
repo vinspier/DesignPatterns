@@ -13,7 +13,7 @@ public class SysAuditor extends AbstractAuditorService<String,Integer> {
 
     @Override
     public Integer execute(String val) {
-        if (val == null){
+        if (null == val){
             throw new NullPointerException("被审核参数i不可为空");
         }
         return analyse(val);

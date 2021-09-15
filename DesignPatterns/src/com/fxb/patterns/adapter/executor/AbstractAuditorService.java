@@ -14,7 +14,7 @@ public abstract class AbstractAuditorService<I,O> implements AuditorService<I,O>
      * */
     @Override
     public O submit(I i) {
-        if (i == null){
+        if (null == i){
             throw new NullPointerException("任务参数i不可为空");
         }
         return execute(i);

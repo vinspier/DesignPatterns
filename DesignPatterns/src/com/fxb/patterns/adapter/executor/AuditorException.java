@@ -1,11 +1,13 @@
 package com.fxb.patterns.adapter.executor;
 
 /**
- * @ClassName: ExecuteException
- * @Description:
- * @Author:
- * @Date: 2020/4/15 12:42
- * @Version V1.0
- **/
+ * 制定配套的异常信息
+ *
+ * @author  tuofeilun
+ * @date    2021/9/15 10:35 上午
+ * @version 1.0
+ * @menu
+*/
 public class AuditorException {
+
 }
